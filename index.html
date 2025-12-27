@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>台湾旅行日程表</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Yomogi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>🇹🇼 台湾旅行日程 🇹🇼</h1>
+            <p class="subtitle">3泊4日の旅</p>
+        </header>
+
+        <div class="timeline">
+            <!-- Day 1 -->
+            <section class="day-card" id="day1">
+                <div class="day-header">
+                    <h2>1日目</h2>
+                    <span class="date">2月7日（土）</span>
+                </div>
+                <div class="events">
+                    <div class="event flight">
+                        <div class="time">10:25</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-plane-departure"></i></span>
+                            <div class="desc">
+                                <strong>羽田空港 発</strong>
+                                <span class="note">BR189便</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-down">⬇️</div>
+                    <div class="event flight">
+                        <div class="time">13:25</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-plane-arrival"></i></span>
+                            <div class="desc">
+                                <strong>台北（松山空港） 着</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event taxi">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-taxi"></i></span>
+                            <div class="desc">
+                                <strong>専用車で観光へ</strong>
+                                <p>中正紀念堂（約1時間）<br>途中で両替所に立ち寄り 💰</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event hotel">
+                        <div class="time">15:00以降</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-hotel"></i></span>
+                            <div class="desc">
+                                <strong>リージェント台北 チェックイン</strong>
+                                <p>まずはサウナで整う 🧖‍♂️</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event night-market">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-utensils"></i></span>
+                            <div class="desc">
+                                <strong>夜市巡り 🏮</strong>
+                                <p>雙城街夜市 & 士林夜市</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation Button Day 1 -->
+                    <button class="recommend-btn" onclick="toggleRecommend('rec-day1')">
+                        <i class="fa-solid fa-lightbulb"></i> このエリアのおすすめスポットを見る
+                    </button>
+                    <div id="rec-day1" class="recommend-content">
+                        <div class="rec-group">
+                            <h4>🏮 士林夜市</h4>
+                            <ul>
+                                <li><strong>豪大大雞排</strong>：顔より大きい巨大フライドチキン 🍗</li>
+                                <li><strong>鍾家原上海生煎包</strong>：底カリカリの焼き小籠包（ミシュラン掲載）</li>
+                                <li><strong>忠誠號蚵仔煎</strong>：具だくさん牡蠣オムレツ</li>
+                                <li><strong>阿輝麺線</strong>：牡蠣とモツ入り（ミシュラン掲載）</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>🌃 雙城街夜市・中山エリア</h4>
+                            <ul>
+                                <li><strong>鴻水餃牛肉麺</strong>：手作り水餃子が絶品 🥟</li>
+                                <li><strong>脆皮鮮奶甜甜圈</strong>：行列ができる揚げたてミルクドーナツ（晴光市場） 🍩</li>
+                                <li><strong>面線町</strong>：中山駅近く、海鮮たっぷりの豪華麺線</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Day 2 -->
+            <section class="day-card" id="day2">
+                <div class="day-header">
+                    <h2>2日目</h2>
+                    <span class="date">2月8日（日）</span>
+                </div>
+                <div class="events">
+                    <div class="event meal">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-mug-hot"></i></span>
+                            <div class="desc">
+                                <strong>ホテルにて朝食 🥐</strong>
+                                <p>リージェント台北 連泊</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event sightseeing">
+                        <div class="time">午前</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-person-hiking"></i></span>
+                            <div class="desc">
+                                <strong>台北散策</strong>
+                                <ul>
+                                    <li>象山</li>
+                                    <li>台北101</li>
+                                    <li>南港公園</li>
+                                    <li>臨江街観光夜市</li>
+                                    <li>饒河街観光夜市</li>
+                                    <li>五分埔商圈</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event relax">
+                        <div class="time">昼過ぎ</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-bed"></i></span>
+                            <div class="desc">
+                                <strong>ホテルで休憩</strong>
+                                <p>サウナでリフレッシュ 🧖</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event train">
+                        <div class="time">午後</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-train-subway"></i></span>
+                            <div class="desc">
+                                <strong>電車で西門へ 🚃</strong>
+                                <p>西門町夜市、梧州街観光夜市、<br>南機場夜市をまわる</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation Button Day 2 -->
+                    <button class="recommend-btn" onclick="toggleRecommend('rec-day2')">
+                        <i class="fa-solid fa-lightbulb"></i> このエリアのおすすめスポットを見る
+                    </button>
+                    <div id="rec-day2" class="recommend-content">
+                        <div class="rec-group">
+                            <h4>🏙️ 台北101・象山周辺</h4>
+                            <ul>
+                                <li><strong>鼎泰豊 101店</strong>：王道の小籠包 ✨</li>
+                                <li><strong>竹村居酒屋</strong>：101が見える路地裏の居酒屋</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>🌈 西門町</h4>
+                            <ul>
+                                <li><strong>阿宗麺線</strong>：カツオ出汁が効いたモツ入り麺線 🍜</li>
+                                <li><strong>天天利美食坊</strong>：卵乗せとろーりルーローハン 🍚</li>
+                                <li><strong>幸福堂</strong>：黒糖タピオカミルクの有名店 🧋</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>😋 南機場夜市 (美食の宝庫)</h4>
+                            <ul>
+                                <li><strong>來來水餃</strong>：水餃子の名店</li>
+                                <li><strong>山内鶏肉</strong>：ぷりぷりの鶏肉飯（ミシュラン掲載）</li>
+                                <li><strong>阿男麻油雞</strong>：ごま油香る鶏スープ</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Day 3 -->
+            <section class="day-card" id="day3">
+                <div class="day-header">
+                    <h2>3日目</h2>
+                    <span class="date">2月9日（月）</span>
+                </div>
+                <div class="events">
+                    <div class="event shopping">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-bag-shopping"></i></span>
+                            <div class="desc">
+                                <strong>お土産タイム ①</strong>
+                                <p>家楽福超市 台北林森北店<br>（24時間営業）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event shopping">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-gift"></i></span>
+                            <div class="desc">
+                                <strong>お土産タイム ②</strong>
+                                <p>赤峰街、寧夏夜市、<br>延三観光夜市、迪化街</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event taxi">
+                        <div class="time">17:30</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-users"></i></span>
+                            <div class="desc">
+                                <strong>ホテル集合</strong>
+                                <p>専用車で夕食会場へ 🚕</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event dinner">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-bowl-food"></i></span>
+                            <div class="desc">
+                                <strong>夕食：北京料理</strong>
+                                <p class="highlight">聚馥園（じゅふくえん）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event walk">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-person-walking"></i></span>
+                            <div class="desc">
+                                <strong>食後の散策（解散）</strong>
+                                <p>四平街陽光商圏、遼寧街夜市など<br>（ホテルには戻らず現地解散可）</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation Button Day 3 -->
+                    <button class="recommend-btn" onclick="toggleRecommend('rec-day3')">
+                        <i class="fa-solid fa-lightbulb"></i> このエリアのおすすめスポットを見る
+                    </button>
+                    <div id="rec-day3" class="recommend-content">
+                        <div class="rec-group">
+                            <h4>🧱 赤峰街 (レトロおしゃれ)</h4>
+                            <ul>
+                                <li><strong>Miss V Bakery</strong>：シナモンロールが人気 🥯</li>
+                                <li><strong>卜卜商店</strong>：古民家リノベカフェ ☕</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>🎁 迪化街 (お土産)</h4>
+                            <ul>
+                                <li><strong>高建桶店</strong>：カラフルなナイロン漁師網バッグ 🛍️</li>
+                                <li><strong>滋養製菓</strong>：パイナップルケーキや最中 🍍</li>
+                                <li><strong>富自山中</strong>：パッケージが可愛いドライフルーツ</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>🍽️ 寧夏夜市</h4>
+                            <ul>
+                                <li><strong>圓環邊蚵仔煎</strong>：行列必至の牡蠣オムレツ</li>
+                                <li><strong>劉芋仔</strong>：サクサクタロイモ団子 🍠</li>
+                                <li><strong>方家鶏肉飯</strong>：旨味たっぷりの鶏肉飯</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Day 4 -->
+            <section class="day-card" id="day4">
+                <div class="day-header">
+                    <h2>4日目</h2>
+                    <span class="date">2月10日（火）</span>
+                </div>
+                <div class="events">
+                    <div class="event hotel">
+                        <div class="time">11:00まで</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-door-open"></i></span>
+                            <div class="desc">
+                                <strong>各自チェックアウト</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event sightseeing">
+                        <div class="time">11:30頃</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-camera"></i></span>
+                            <div class="desc">
+                                <strong>専用車で龍山寺へ</strong>
+                                <p>途中でお土産屋に立ち寄り</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recommendation Button Day 4 -->
+                    <button class="recommend-btn" onclick="toggleRecommend('rec-day4')">
+                        <i class="fa-solid fa-lightbulb"></i> 現地で人気のお土産（自分用にも！）
+                    </button>
+                    <div id="rec-day4" class="recommend-content">
+                        <div class="rec-group">
+                            <h4>🛒 スーパー・ドラッグストアで探す</h4>
+                            <ul>
+                                <li><strong>京都念慈菴のど飴</strong>：レトロな缶が可愛い台湾の定番</li>
+                                <li><strong>リプトン烏龍ミルクティー</strong>：ティーバッグで手軽に台湾の味</li>
+                                <li><strong>ほんだし (ホタテ味)</strong>：日本未発売！料理好きへのお土産に最適 🍳</li>
+                                <li><strong>台湾ビール (フルーツ味)</strong>：マンゴーやパイナップルなど種類豊富 🍺</li>
+                                <li><strong>FACE MASK (我的美麗日記)</strong>：コスパ最強のシートマスク ✨</li>
+                                <li><strong>グリーンオイル (緑油精)</strong>：万能アロマオイル。虫刺されや眠気覚ましに</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>🍘 地元愛されスナック</h4>
+                            <ul>
+                                <li><strong>乖乖 (グァイグァイ)</strong>：台湾の国民的スナック菓子</li>
+                                <li><strong>孔雀餅乾</strong>：素朴な味のビスケット。コーヒーに合う！</li>
+                                <li><strong>可楽果</strong>：ニンニクが効いた豆スナック。ビールのお供に最高 🥜</li>
+                                <li><strong>義美の小泡芙</strong>：サクサクのミニパフ。スーパーの定番おやつ</li>
+                            </ul>
+                        </div>
+                        <div class="rec-group">
+                            <h4>🛍️ 龍山寺周辺・その他</h4>
+                            <ul>
+                                <li><strong>漁師網バッグ (茄芷袋)</strong>：丈夫でレトロ可愛いナイロンバッグ</li>
+                                <li><strong>お守り</strong>：龍山寺の開運グッズ。デザインも豊富</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="arrow-down">⬇️</div>
+                    <div class="event bus">
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-bus"></i></span>
+                            <div class="desc">
+                                <strong>観光後、空港へ移動</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event flight">
+                        <div class="time">16:30</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-plane-departure"></i></span>
+                            <div class="desc">
+                                <strong>台北（松山空港） 発</strong>
+                                <span class="note">BR190便</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event flight">
+                        <div class="time">20:20</div>
+                        <div class="content">
+                            <span class="icon"><i class="fa-solid fa-plane-arrival"></i></span>
+                            <div class="desc">
+                                <strong>羽田空港 着</strong>
+                                <p>入国・通関後、解散 👋</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <p>素敵な台湾旅行を！ 🇹🇼✨</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

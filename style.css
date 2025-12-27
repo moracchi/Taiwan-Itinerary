@@ -1,0 +1,323 @@
+:root {
+    --bg-color: #fcf9ee;
+    /* クリーム色（紙っぽい色） */
+    --text-color: #2c3e50;
+    --accent-red: #e74c3c;
+    /* 台湾らしい赤 */
+    --accent-yellow: #f1c40f;
+    --accent-green: #2ecc71;
+    --line-color: #7f8c8d;
+    --card-bg: #ffffff;
+    --font-hand: 'Yomogi', cursive;
+    --font-header: 'Kiwi Maru', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: var(--font-hand);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Header Style */
+.main-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+    background: #fff;
+    border: 3px solid var(--text-color);
+    border-radius: 2% 5% 3% 4% / 95% 90% 98% 99%;
+    /* 手書き風の歪み */
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    color: var(--accent-red);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding-left: 0;
+}
+
+/* Day Card Style */
+.day-card {
+    background: var(--card-bg);
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 3px solid var(--text-color);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    /* 手書き風の形状 */
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Day Header */
+.day-header {
+    background: var(--accent-yellow);
+    display: inline-block;
+    padding: 5px 15px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    transform: rotate(-2deg);
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.day-header h2 {
+    font-family: var(--font-header);
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.date {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Events Style */
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px dashed #ddd;
+    /* 点線で区切り */
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.time {
+    font-weight: bold;
+    background: var(--text-color);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: center;
+    transform: rotate(1deg);
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+}
+
+.icon {
+    font-size: 1.5rem;
+    color: var(--accent-red);
+    width: 30px;
+    text-align: center;
+}
+
+.desc strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+    font-family: var(--font-header);
+}
+
+.desc p,
+.desc ul {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.desc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.desc ul li::before {
+    content: '・';
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #666;
+    background: #eee;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.highlight {
+    background: linear-gradient(transparent 60%, rgba(231, 76, 60, 0.3) 60%);
+    display: inline;
+}
+
+/* Arrow between events */
+.arrow-down {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--line-color);
+    margin: -10px 0;
+}
+
+/* Specific Event Types */
+.event.flight .icon {
+    color: #3498db;
+}
+
+.event.hotel .icon {
+    color: #9b59b6;
+}
+
+.event.night-market .icon {
+    color: #e67e22;
+}
+
+.event.dinner .icon {
+    color: #e74c3c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .day-card {
+        padding: 15px 10px;
+    }
+
+    .event {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .time {
+        align-self: flex-start;
+    }
+}
+
+/* Animation classes */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Recommendation Styles */
+.recommend-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #fff;
+    border: 2px dashed var(--accent-green);
+    border-radius: 10px;
+    font-family: var(--font-hand);
+    font-size: 1rem;
+    color: var(--accent-green);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.recommend-btn:hover {
+    background: var(--accent-green);
+    color: #fff;
+    border-style: solid;
+}
+
+.recommend-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 10px 10px;
+    padding: 0 15px;
+    /* Padding applied only when visible to avoid jumping */
+}
+
+.recommend-content.active {
+    padding: 15px;
+    border: 2px solid var(--accent-green);
+    border-top: none;
+    background: #fff;
+}
+
+.rec-group {
+    margin-bottom: 15px;
+}
+
+.rec-group:last-child {
+    margin-bottom: 0;
+}
+
+.rec-group h4 {
+    color: var(--text-color);
+    border-bottom: 1px dotted var(--line-color);
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.rec-group ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.rec-group li {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.rec-group li::before {
+    content: '👉';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.8rem;
+}
