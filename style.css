@@ -321,3 +321,68 @@ footer {
     top: 0;
     font-size: 0.8rem;
 }
+
+/* Tips Styles */
+.tips-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #fff;
+    border: 2px dashed #e67e22;
+    /* Orange for tips */
+    border-radius: 10px;
+    font-family: var(--font-hand);
+    font-size: 1rem;
+    color: #e67e22;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.tips-btn:hover {
+    background: #e67e22;
+    color: #fff;
+    border-style: solid;
+}
+
+.tips-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #fff8e1;
+    /* Light orange bg */
+    border-radius: 0 0 10px 10px;
+    padding: 0 15px;
+}
+
+.tips-content.active {
+    padding: 15px;
+    border: 2px solid #e67e22;
+    border-top: none;
+}
+
+.tips-group h4 {
+    color: #d35400;
+    border-bottom: 1px dotted #e67e22;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.tips-group ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.tips-group li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.tips-item-title {
+    font-weight: bold;
+    display: block;
+    color: #c0392b;
+    margin-bottom: 2px;
+}

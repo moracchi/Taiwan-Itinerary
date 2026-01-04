@@ -21,6 +21,52 @@
         </header>
 
         <div class="timeline">
+            <!-- Travel Tips: Arrival -->
+            <section class="day-card" style="border-color: #e67e22; background: #fffdf5;">
+                <div class="day-header" style="background: #e67e22; color: #fff;">
+                    <h2>🇹🇼 渡航・到着時の裏技</h2>
+                </div>
+                <!-- Tips Button Arrival -->
+                <button class="tips-btn" onclick="toggleRecommend('tips-arrival')" style="margin-top: 0;">
+                    <i class="fa-solid fa-book-open"></i> お得＆時短テクニックを見る
+                </button>
+                <div id="tips-arrival" class="tips-content">
+                    <div class="tips-group">
+                        <h4>📡 ネット接続 (Y!mobile 海外あんしん定額)</h4>
+                        <ul>
+                            <li><span class="tips-item-title">1. 機内モードOFF & ローミングON</span>
+                                設定＞モバイル通信＞通信のオプション＞データローミングを「オン」！</li>
+                            <li><span class="tips-item-title">2. SMSを開く</span>
+                                ソフトバンクからの「台湾へようこそ」メールを確認。</li>
+                            <li><span class="tips-item-title">3. 「利用開始」ボタンを押す (重要！)</span>
+                                <strong>94時間(3,940円)</strong>等のプランを選び「利用を開始する」をタップ。これやらないと高額請求の恐れあり！⚠️
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tips-group">
+                        <h4>✈️ 入国審査の時短術</h4>
+                        <ul>
+                            <li><span class="tips-item-title">オンライン入国カード & e-Gate</span>
+                                日本出発前に「オンライン入国カード」を登録し、現地で「e-Gate」登録を行えば、次回から顔認証で数秒で入国可能！最強の時短術です。</li>
+                        </ul>
+                    </div>
+                    <div class="tips-group">
+                        <h4>💰 5,000元の運試し (消費金)</h4>
+                        <ul>
+                            <li><span class="tips-item-title">台湾ラッキーランド</span>
+                                到着の1〜7日前までに公式サイトで事前登録。空港の抽選会場で当たれば約2.5万円相当の電子マネーGET！</li>
+                        </ul>
+                    </div>
+                    <div class="tips-group">
+                        <h4>💧 「実はタダ」活用術</h4>
+                        <ul>
+                            <li><span class="tips-item-title">公共インフラ活用</span>
+                                MRT各駅の「給水機」でマイボトルに水を補充。公共Wi-Fi「iTaiwan」も活用しよう。</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
             <!-- Day 1 -->
             <section class="day-card" id="day1">
                 <div class="day-header">
@@ -77,6 +123,22 @@
                         </div>
                     </div>
 
+                    <!-- Tips Button Night Market -->
+                    <button class="tips-btn" onclick="toggleRecommend('tips-night-market')">
+                        <i class="fa-solid fa-book-open"></i> 夜市攻略テクニック 5選
+                    </button>
+                    <div id="tips-night-market" class="tips-content">
+                        <div class="tips-group">
+                            <ul style="padding: 0;">
+                                <li><strong>1. ゴミ箱は駅かコンビニへ</strong>：夜市にはゴミ箱がほぼない！買った屋台で引き取ってもらうか、駅まで持ち帰ろう。</li>
+                                <li><strong>2. ウェットティッシュは「武器」</strong>：手が汚れる食べ物の宝庫。必携アイテム。</li>
+                                <li><strong>3. トイレは先に済ませる</strong>：夜市のトイレは混雑＆汚れがち。駅かドラッグストア(POYA等)で。</li>
+                                <li><strong>4. 魔法の呪文「内用(ネイヨン)・外帯(ワイダイ)」</strong>：内用＝イートイン、外帯＝テイクアウト。使い分けて効率よく！</li>
+                                <li><strong>5. 支払いは現金最強</strong>：小銭と100元札を多めに用意。EasyCardが使える店も増えてます。</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <!-- Recommendation Button Day 1 -->
                     <button class="recommend-btn" onclick="toggleRecommend('rec-day1')">
                         <i class="fa-solid fa-lightbulb"></i> このエリアのおすすめスポットを見る
@@ -127,7 +189,16 @@
                                 <strong>台北散策</strong>
                                 <ul>
                                     <li>象山</li>
-                                    <li>台北101</li>
+                                    <li>台北101
+                                        <button class="tips-btn" onclick="toggleRecommend('tips-101')"
+                                            style="padding: 5px; font-size: 0.9rem; margin-top: 5px; width: auto; display: inline-block;">
+                                            <i class="fa-solid fa-camera"></i> 101を外から楽しむ穴場
+                                        </button>
+                                        <div id="tips-101" class="tips-content" style="margin-top: 5px;">
+                                            <p style="font-size: 0.9rem; margin: 5px 0;"><strong>📸 絶景テクニック</strong><br>
+                                                象山の遊歩道や、デパート「微風南山」の高層階から見るのがおすすめ。中に入るより、外から101を見たほうが「台北らしい夜景」が撮れます！</p>
+                                        </div>
+                                    </li>
                                     <li>南港公園</li>
                                     <li>臨江街観光夜市</li>
                                     <li>饒河街観光夜市</li>
@@ -362,6 +433,20 @@
                                 <strong>羽田空港 着</strong>
                                 <p>入国・通関後、解散 👋</p>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Return Tips Button -->
+                    <button class="tips-btn" onclick="toggleRecommend('tips-return')">
+                        <i class="fa-solid fa-house"></i> 帰国後の設定（忘れずに！）
+                    </button>
+                    <div id="tips-return" class="tips-content">
+                        <div class="tips-group">
+                            <h4>📡 スマホ設定を戻す</h4>
+                            <ul>
+                                <li><span class="tips-item-title">データローミングを「オフ」にする</span>
+                                    そのままでも料金はかかりませんが、次の海外旅行での誤作動防止のためOFFに戻しておきましょう。お疲れ様でした！ 🍵</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
